@@ -23,7 +23,7 @@ Simply with hooks you no longer need to define a class in order to have a state 
 
 By calling our first built-in hook **useState** 🎉
 
-```js
+```javascript
 const [value, setValue] = useState(initialState);
 //or
 const value = useState(initialState)[0];
@@ -50,7 +50,7 @@ Let's discuss it with more details:
 
 ***Simple Counter using class:***
 
-```js
+```javascript
 class Counter extends React.Component {
 
   constructor(props) {
@@ -80,7 +80,7 @@ class Counter extends React.Component {
 
 ***the same example using useState hook:***
 
-```js
+```javascript
 function Counter(){
     const [count, setCount] = useState(0);
     
@@ -122,7 +122,7 @@ let's exaplain the execution of the functional component with hooks and how func
 
 > switch to branch example-2
 > 
-```js
+```javascript
 function sayHi(){
   const [name, setName] = useState("Ahmed");
   const [greeting, setGreeting] = useState("Hello");
@@ -190,7 +190,7 @@ create simple todo app
 * We can use **useEffect** to perform such operations
 * **useEffect** lets you perform side effects in components, and is almost similar to lifecycle methods in classes (*componentDidMount, componentDidUpdate, and componentWillUnmount*)
 
-```js
+```javascript
     useEffect(callbackFunction, [dependencyArray])
 ```
 
@@ -208,7 +208,7 @@ create simple todo app
 * When it's not present, the callback will always be fired after every render.
 * When it's an empty array [], the callback will only be fired once, similar to `componentDidMount`(somehow). basicly the useEffect won't find any changes so it won't be called after the first call.
 
-```js
+```javascript
     useEffect(()=> {
         ...doSomeThing
     },[])
@@ -223,7 +223,7 @@ so we can describe it like this:
 
 You can simulate `componentWillUnmount` by returning *a function* from the use Effect (it is called a **clean up** function)
 
-```js
+```javascript
     useEffect(()=>{
         ...doSomeThing
         //this is the clean up function
