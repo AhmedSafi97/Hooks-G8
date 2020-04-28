@@ -6,7 +6,7 @@
 
 >-- <cite>Dan Abramov React Conf 2018</cite>
 
-## So waht are Hooks?🤔
+## So what are Hooks?🤔
 
 Functions that let you “hook into” React state and lifecycle features from function components.
 Simply with hooks you no longer need to define a class in order to have a state and it's lifecycle methods.
