@@ -27,8 +27,9 @@ By calling our first built-in hook **useState** 🎉
 ```javascript
 const [value, setValue] = useState(initialState);
 //or
-const value = useState(initialState)[0];
-const setValue = useState(initialState)[1];
+const state = useState(initialState)
+const value = state[0];
+const setValue = state[1];
 ```
 
 Calling useState will return an array contains the state value and a function to change the state.
