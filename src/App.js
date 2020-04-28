@@ -1,26 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+import CounterFunctional from './components/CounterFunctional';
+import CounterClass from './components/CounterClass';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+		<div className="container text-center pt-5">
+			<CounterFunctional />
+			<CounterClass />
+		</div>
+	);
 }
 
 export default App;
