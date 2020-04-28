@@ -1,7 +1,6 @@
 import React from 'react';
 import CounterFunctional from './components/CounterFunctional';
 import CounterClass from './components/CounterClass';
-import './App.css';
 
 function App() {
   return (
