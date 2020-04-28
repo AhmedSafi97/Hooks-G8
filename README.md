@@ -251,5 +251,7 @@ Try to create this effect
 ![](https://i.imgur.com/AizMCZA.gif)
 
 
-Exercise 2:
+**Exercise 2**:
 use Yandex translate API to translate the input from english to arabic
+https://translate.yandex.net/api
+
