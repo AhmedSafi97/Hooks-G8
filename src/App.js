@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import Greeting from './Greeting';
 
 function App() {
   return <div className="container text-center pt-5">
-    APP
+    <Greeting/>
   </div>;
 }
 
